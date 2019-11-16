@@ -57,9 +57,9 @@ body {
     content: "";
     position: absolute;
     right: 0;
-    top: 0;
+    top: 6px;
     width: 2px;
-    height: 110%;
+    height: 84%;
     background-color: rgba(152, 147, 147, 0.36);
 }
 
@@ -76,10 +76,11 @@ body {
     -o-transition: all .5s ease-in-out;
 }
 
-.language,
+
+/* .language,
 .up_nav_social {
     margin-top: 3%;
-}
+} */
 
 .up_nav_social i.instagram:hover {
     color: #b54da3!important;
@@ -97,9 +98,10 @@ body {
     color: #2ac52a!important
 }
 
-.up_contact {
+
+/* .up_contact {
     margin-top: 2%;
-}
+} */
 
 
 /* end up_nav */
