@@ -215,8 +215,8 @@ body {
 /* start home section  */
 
 .home {
-    background-image: url(../imgs/imgs/BG.jpg);
-    background-size: 100% 100%;
+    /* background-image: url(../imgs/imgs/BG.jpg);
+    background-size: 100% 100%; */
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
@@ -234,11 +234,12 @@ body {
     margin: 15px 0px;
 }
 
-.home_header p {
+.carousel-caption p {
     font-size: 18px;
     line-height: 1.986;
     padding: 15px 8px;
     width: 90%;
+    color: #14171C;
 }
 
 .home_btn {
