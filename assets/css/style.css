@@ -237,7 +237,7 @@ body {
 .carousel-caption p {
     font-size: 18px;
     line-height: 1.986;
-    padding: 15px 8px;
+    padding: 15px 10px;
     width: 90%;
     color: #14171C;
 }
@@ -262,6 +262,11 @@ body {
 
 .home_btn:hover {
     color: #f92b2d!important;
+}
+
+.carousel-caption {
+    right: 5%;
+    top: 5%;
 }
 
 
