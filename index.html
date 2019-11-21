@@ -543,6 +543,44 @@
     <script src="assets/js/slick.min.js "></script>
     <script src="assets/js/bootstrap-select.min.js "></script>
     <script>
+        // donner requests 
+
+        var myrequest = new XMLHttpRequest();
+        var url = "https://cors-anywhere.herokuapp.com/" + "http://ipda3-tech.com/blood-bank/api/v1/donation-requests?api_token=W4mx3VMIWetLcvEcyF554CfxjZHwdtQldbdlCl2XAaBTDIpNjKO1f7CHuwKl&page=1";
+
+        myrequest.onreadystatechange = (function() {
+            if (this.readyState === 4 && this.status == 200) {
+
+                var myjsobject = JSON.parse(this.responseText),
+                    myText = "",
+                    element = ;
+
+
+
+                for (var i = 0; i < myjsobject['data'].data.length; i++) {
+
+
+                    myText += myjsobject['data'].data[i].patient_name + "<br>";
+                    // console.log(myText);
+                };
+
+                document.getElementById('show').innerHTML = myText;
+
+
+
+                // console.log(JSON.parse(this.responseText));
+
+            };
+
+        });
+        myrequest.open('Get', url, true);
+        myrequest.send();
+
+
+
+
+
+
         $('.carousel').carousel({
             interval: 5000,
             pause: "false"
